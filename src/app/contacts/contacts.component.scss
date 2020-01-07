@@ -1,0 +1,17 @@
+@import '../../scss/color';
+@import '../../scss/typography';
+.contanct-container{
+  border: 1px solid #d3d3d3;
+  padding: 12px 30px;
+  border-radius: 5px;
+  background: linear-gradient(81deg, #9c8f91, #6698a0c4);
+  color: white;
+
+  h3{
+    font-size: 22px;
+  }
+  .contact-info{
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

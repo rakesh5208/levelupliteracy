@@ -1,0 +1,18 @@
+@import '../../scss/color';
+@import '../../scss/typography';
+.contact{
+  padding: 15px;
+  color: $link-color;
+  font-size: $font-size-24;
+  font-weight: $font-weight-500;
+  &--info{
+      border-right: 1px solid $border-color;
+      padding: 0 8px;
+      cursor: pointer;
+      display: inline-block;
+  }
+}
+
+.fa{
+  color: $secondary-color;
+}

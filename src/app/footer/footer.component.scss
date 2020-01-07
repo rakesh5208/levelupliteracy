@@ -1,0 +1,12 @@
+@import '../../scss/color';
+@import '../../scss/typography';
+
+.lil-footer-container {
+  background-color: $primary-color;
+  color: $color-white;
+  .content{
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+  }
+}
