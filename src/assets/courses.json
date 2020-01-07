@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Banking",
+    "poster": "/assets/imgs/courses/ipbs.jpg",
+    "description": "Banking Exam prepreation and supported guide provided"
+  },
+  {
+    "name": "Raiwalys",
+    "poster": "/assets/imgs/courses/rrb.jpg",
+    "description": "Railways Exam prepreation and supported guide provided"
+  },
+  {
+    "name": "SSC",
+    "poster": "/assets/imgs/courses/ssc.jpg",
+    "description": "SSC Exam prepreation and supported guide provided"
+  },
+  {
+    "name": "MBA-CET",
+    "poster": "",
+    "description": "MBA-CET Exam prepreation and supported guide provided"
+  },
+  {
+    "name": "TET",
+    "poster": "",
+    "description": "TET Exam prepreation and supported guide provided"
+  },
+  {
+    "name": "GENERAL",
+    "poster": "",
+    "description": "General competitive exam prepreation and supported guide provided"
+  }
+]

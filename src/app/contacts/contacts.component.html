@@ -1,21 +1,28 @@
 <div class="row">
   <!-- address -->
-  <div class="col-md-6">
+  <div class="col-md-6" *ngIf="contact">
     <div class="contanct-container">
       <div>
         <h3> <i class="fa fa-home" aria-hidden="true"></i> &nbsp;Address</h3>
-        <div class="contact-info"> Level-Up Literacy,</div>
-        <div class="contact-info"> Opposite Excise Office,</div>
-        <div class="contact-info"> Before Narayan Kohli Chowk,</div>
-        <div class="contact-info"> Thane East, Maharashtra 400603</div>
+        <div class="contact-info"> {{contact.address.line1}}</div>
+        <div class="contact-info"> {{contact.address.line2}}</div>
+        <div class="contact-info"> {{contact.address.line3}}</div>
+        <div class="contact-info"> {{contact.address.line4}}</div>
       </div>
       <div>
         <h3> <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;Email</h3>
-        <div class="contact-info"> LevelUpLiteracy@gmail.com</div>
+        <ng-container *ngFor="let email of contact.emails">
+          <div class="contact-info">{{email}}</div>
+        </ng-container>
+        
       </div>
       <div>
         <h3> <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Mobile Number</h3>
-        <div class="contact-info"> +91-8097318410</div>
+        <ng-container *ngFor="let phone of contact.phones">
+          <div class="contact-info">{{phone}}</div>
+        </ng-container>
+        
+        
       </div>
     </div>
   </div>

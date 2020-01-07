@@ -1,10 +1,24 @@
 <div>
-    Maths and Reasoning for the follwing exams
-    <ul>
-      <li>Banking</li>
-      <li>Railways</li>
-      <li>SSC</li>
-      <li>Railways</li>
-      <li>TET</li>
-    </ul>
+  <h1>Here are the courses we offered for you !! </h1>
+  <div class="row">
+    <div *ngFor="let course of courses" class="col-md-4 col-sm-6 each-col">
+      <div class="each-course">
+        <div class="img">
+          <ng-container *ngIf="course.poster; then renderPoster else renderText"></ng-container>
+          <ng-template #renderPoster>
+            <img [src]="course.poster" />
+          </ng-template>
+          <ng-template #renderText>
+            <div class="course-alt-text">{{course.name}}</div>
+          </ng-template>
+        </div>
+        <div class="course-name">
+          {{course.name}}
+        </div>
+        <div class="course-desc">
+          {{course.description}}
+        </div>
+      </div>
+    </div>
   </div>
+</div>

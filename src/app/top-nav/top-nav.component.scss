@@ -19,8 +19,6 @@
 .navbar-brand{
   color: $color-white;
   position: relative;
-  // font-size: 22px;
-  // padding: 5px;
 }
 .navbar-brand:hover{
   color: $color-white;
@@ -39,11 +37,15 @@
 }
 
 .navbar-toggle{
-  border-color: $color-white;
+  border:none;
   .icon-bar{
     background-color: $color-white;
   }
-  &:focus, &:hover{
-    background-color: $secondary-color;
+  .fa {
+    color: $color-white;
+    
+  }
+  &:focus, &:hover {
+    background-color: transparent;
   }
 }

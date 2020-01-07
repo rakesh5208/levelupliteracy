@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'lil-course',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./course.component.scss']
 })
 export class CourseComponent implements OnInit {
-
-  constructor() { }
+  courses:Course[] = [];
+  constructor(private dataService:DataService) { }
 
   ngOnInit() {
+    this.dataService.getCourses().subscribe((courses:Course[])=>{
+      this.courses = courses;
+    });
   }
 
 }
