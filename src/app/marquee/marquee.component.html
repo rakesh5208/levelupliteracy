@@ -1,0 +1,5 @@
+<div class="bounce" *ngIf = "notfications.length > 0">
+  <ng-container *ngFor="let notify of notfications">
+    <marquee> {{notify.desc}}</marquee>
+  </ng-container>
+</div>

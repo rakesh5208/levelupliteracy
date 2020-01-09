@@ -25,4 +25,10 @@ export class DataService {
   public getStudentTestinomials(){
     return this.http.get<Student[]>(`${this.baseUrl}/testiniomials.json`);
   }
+  /**
+   * get marquee notifiaiton
+   */
+  public getNotifications(){
+    return this.http.get<Student[]>(`${this.baseUrl}/notifications.json`);
+  }
 }

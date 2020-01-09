@@ -1,10 +1,10 @@
 @import '../../scss/color';
 @import '../../scss/typography';
 .contanct-container{
-  border: 1px solid $border-color;
+  box-shadow: $box-shadow;
   padding: 12px 30px;
   border-radius: 5px;
-  background: linear-gradient(81deg, #9c8f91, #6698a0c4);
+  background: $grad-color;
   color: white;
 
   h3{

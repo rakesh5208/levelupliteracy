@@ -1,26 +1,26 @@
 [
   {
-    "name": "Rakesh",
+    "name": "",
     "courseRegisterd": "Banking",
-    "image": "",
+    "image": "/assets/imgs/student/student_1.jpg",
     "testinomial": "Levelup literacy institue has given all the material to"
   },
   {
-    "name": "Abhsiek Kumar",
+    "name": ,
     "courseRegisterd": "MBA-CET",
-    "image": "",
+    "image": "/assets/imgs/student/student_2.jpg",
     "testinomial": "Levelup literacy institue has given all the material to"
   },
   {
-    "name": "Shakshi",
+    "name": "",
     "courseRegisterd": "GENERAL",
-    "image": "",
+    "image": "/assets/imgs/student/student_3.jpg",
     "testinomial": "Levelup literacy institue has given all the material to"
   },
   {
-    "name": "Pallavi",
+    "name": "",
     "courseRegisterd": "SSC",
-    "image": "",
+    "image": "/assets/imgs/student/student_4.jpg",
     "testinomial": "Levelup literacy institue has given all the material to"
   }
 ]

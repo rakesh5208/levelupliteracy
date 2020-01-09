@@ -10,7 +10,7 @@
     // color: black;
 }
 .navbar{
-  background-color: $primary-color;
+  background: $grad-color;
   border-radius: 0px;
   border: 0px;
 }
@@ -49,3 +49,13 @@
     background-color: transparent;
   }
 }
+
+.fixed-top{
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  position: sticky;
+  background: white;
+  box-shadow: $box-shadow;
+}  

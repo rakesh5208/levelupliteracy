@@ -1,0 +1,17 @@
+@import '../../scss/color';
+@import '../../scss/typography';
+h3 {
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.about-content{
+  text-align: justify;
+  padding: 10px 50px;
+}

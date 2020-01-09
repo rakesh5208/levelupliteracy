@@ -1,9 +1,15 @@
-<carousel [interval] = "5000">
-  <slide *ngFor="let img of imgs" >
-    <img src="assets/imgs/home/{{img}}" alt="first slide" class="carousel-home-img" >
+<carousel [interval]="5000">
+  <slide *ngFor="let img of imgs">
+    <img src="assets/imgs/home/{{img}}" alt="first slide" class="carousel-home-img">
   </slide>
 </carousel>
 <!-- notification -->
+<lil-marquee [notfications]="marqueeNotifications"> </lil-marquee>
 <!-- batch timings -->
 <!-- student testinomials -->
-
+<h3>Students</h3>
+<div class="row">
+  <div *ngFor="let student of students" class="col-md-3 col-sm-6">
+    <lil-student-testinomial [student]="student"></lil-student-testinomial>
+  </div>
+</div>

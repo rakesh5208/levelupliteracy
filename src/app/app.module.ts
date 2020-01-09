@@ -17,6 +17,8 @@ import { TopNavComponent } from './top-nav/top-nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { TopContactComponent } from './top-contact/top-contact.component';
 import { HomeComponent } from './home/home.component';
+import { MarqueeComponent } from './marquee/marquee.component';
+import { StudentTestinomialComponent } from './student-testinomial/student-testinomial.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { HomeComponent } from './home/home.component';
     TopNavComponent,
     FooterComponent,
     TopContactComponent,
-    HomeComponent
+    HomeComponent,
+    MarqueeComponent,
+    StudentTestinomialComponent
   ],
   imports: [
     BrowserAnimationsModule,
