@@ -1,6 +1,9 @@
 <div>
   <h3>Courses</h3>
-  <div class="row">
+  <ng-container *ngIf="isLoading">
+    <lil-course-loader [count]="6"> </lil-course-loader>
+  </ng-container>
+  <div class="row" *ngIf="!isLoading">
     <div *ngFor="let course of courses" class="col-md-4 col-sm-6 each-col">
       <div class="each-course">
         <div class="img">

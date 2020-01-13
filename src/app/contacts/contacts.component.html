@@ -1,6 +1,9 @@
 <div class="row">
+  <ng-container *ngIf="isLoading">
+    <lil-address-loader></lil-address-loader>
+  </ng-container>
   <!-- address -->
-  <div class="col-md-6 col-md-offset-3" *ngIf="contact">
+  <div class="col-md-6 col-md-offset-3" *ngIf="!isLoading">
     <div class="contanct-container">
       <div>
         <h3> <i class="fa fa-home" aria-hidden="true"></i> &nbsp;Address</h3>
@@ -24,6 +27,6 @@
         
         
       </div>
-    </div>
+    </div> 
   </div>
 </div>

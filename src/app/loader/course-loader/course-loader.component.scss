@@ -1,0 +1,48 @@
+@import '../../../scss/color';
+@import '../../../scss/typography';
+.each-course {
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: $box-shadow;
+  
+  .img{
+    width: 100%;
+    height: 130px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    animation: fading 1.5s infinite;
+    background-color: #444;
+  }
+  .img-alt {
+    height: 100%;
+    
+    padding: 10px;
+  }
+  .course-name {
+    text-align:  center;
+    padding: 5px 10px;
+    background: $primary-color;
+  }
+  .text{
+    display: inline-block;
+    background-color: #444;
+    height: 12px;
+    border-radius: 100px;
+    margin: 5px 0;
+    min-width: 100px;
+    opacity: .1;
+    animation: fading 1.5s infinite;
+  }
+  
+  .course-desc{
+    padding: 5px 10px;
+    min-height: 120px;
+  }
+
+}
+.p-10{
+  padding: 0px 10px;
+}
+.line{
+   width: 100%;
+}

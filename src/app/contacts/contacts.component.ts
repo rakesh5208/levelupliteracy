@@ -8,11 +8,16 @@ import { DataService } from '../data.service';
 })
 export class ContactsComponent implements OnInit {
   contact = null;
+  isLoading = false;
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.isLoading = true;
     this.dataService.getContacts().subscribe((contact: any) => {
+      this.isLoading = false;
       this.contact = contact;
+    },(err)=>{
+      this.isLoading = false;
     });
   }
 

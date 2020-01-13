@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import {ReactiveFormsModule} from '@angular/forms';
 // third party imports
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
@@ -19,6 +20,8 @@ import { TopContactComponent } from './top-contact/top-contact.component';
 import { HomeComponent } from './home/home.component';
 import { MarqueeComponent } from './marquee/marquee.component';
 import { StudentTestinomialComponent } from './student-testinomial/student-testinomial.component';
+import { CourseLoaderComponent } from './loader/course-loader/course-loader.component';
+import { AddressLoaderComponent } from './loader/address-loader/address-loader.component';
 
 @NgModule({
   declarations: [
@@ -31,13 +34,16 @@ import { StudentTestinomialComponent } from './student-testinomial/student-testi
     TopContactComponent,
     HomeComponent,
     MarqueeComponent,
-    StudentTestinomialComponent
+    StudentTestinomialComponent,
+    CourseLoaderComponent,
+    AddressLoaderComponent
   ],
   imports: [
     BrowserAnimationsModule,
     CollapseModule.forRoot(),
     CarouselModule.forRoot(),
     HttpClientModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],
